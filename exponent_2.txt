@@ -1,0 +1,27 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int power(int m,int n){
+    if(n==0){
+        return 1;
+    }
+    if(n % 2 ==0){
+        return power(m*m,n/2);
+    }
+    else {
+        return m*power(m*m,(n-1)/2);
+    }
+}
+
+int main() {
+    while (int i=1){
+    cout << "Enter M first then N" <<endl;
+    int m;
+    int n;
+    cin >> m;
+    cin >> n;
+    int calculated = power(m,n);
+    cout << calculated;
+    return 0;
+    }
+}
