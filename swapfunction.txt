@@ -1,0 +1,23 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+void swap(int &a ,int &b){
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
+    return;
+}
+int main() {
+    cout << "Enter the first number RuziToxic Sir" <<endl;
+    int a;
+    int b;
+    cin >> a;
+    cout << "Enter the second number RuziToxic Sir" <<endl;
+    cin >> b;
+    swap(a,b);
+    cout << a;
+    cout << " ";
+    cout << b <<endl;
+    return 0;
+}

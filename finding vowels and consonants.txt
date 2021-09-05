@@ -1,0 +1,21 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+  
+  char vowels[] = {("aeiou")};
+      cout << "Enter the alphabet to find if it is a vowel or a consonant" <<endl;
+  char alphabet;
+  cin >> alphabet;
+  for (int i=0 ; i<5 ;i++){
+      if (alphabet==vowels[i]){
+          cout << "The entered value is vowel" <<endl;
+      }
+      else if(alphabet!=vowels[i]) {
+          cout << "The entered value is a consonant" << endl;
+          break;
+      }
+  }
+    return 0;
+  
+}
